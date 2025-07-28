@@ -14,3 +14,8 @@ const abcdAnon = function() {
 const abcd3 = () => {   
     console.log("heyy4");
 }
+abcd();
+abcd2();
+abcdAnon();
+abcd3();
+
