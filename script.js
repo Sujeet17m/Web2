@@ -22,4 +22,11 @@
 var button = document.querySelector("#btn");
 button.addEventListener("click", function() {
     button.textContent = "Starting...";
+    setTimeout(function() {
+        button.textContent = "Downloading...";
+        setTimeout(function() {
+            alert("Download Complete");
+            button.textContent = "Download";
+        }, 2000);
+    }, 2000);
 });
