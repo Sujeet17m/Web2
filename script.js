@@ -31,6 +31,39 @@ button.addEventListener("click", function() {
     }, 2000);
 });
 
+// let heading = document.querySelector("h1");
+// // heading.textContent = "Sujeet";
+// heading.textContent += "Sujeet";
+
+// let heading = document.querySelector("h1");
+// let userName = prompt("Please enter your name:");
+// try {if (userName !== null && userName.trim() !== "") {
+//     heading.textContent += userName;
+// }} catch (error) {
+//     console.error("An error occurred:", error); 
+//     heading.textContent = "Error: Unable to display name";
+// }
+
+// let heading = document.querySelector("h1");
+// let userName = prompt("Please enter your name:");
+// if (userName !== null && userName.trim() !== "") {
+//     heading.textContent += userName;
+// } else {
+//     heading.textContent += " (No name entered)";
+// }
+
 let heading = document.querySelector("h1");
-// heading.textContent = "Sujeet";
-heading.textContent += "Sujeet";
+let userName = prompt("Please enter your name:");
+try {
+    if (userName !== null && userName.trim() !== "") {
+        heading.textContent += userName;
+    }
+    else if (userName === null) {
+        heading.textContent += "Guest";
+    } else {
+        heading.textContent += " (No name entered)";
+    }
+} catch (error) {
+    console.error("An error occurred:", error);
+    heading.textContent = "Error: Unable to display name";
+}
