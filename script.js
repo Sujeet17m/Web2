@@ -30,3 +30,7 @@ button.addEventListener("click", function() {
         }, 2000);
     }, 2000);
 });
+
+let heading = document.querySelector("h1");
+// heading.textContent = "Sujeet";
+heading.textContent += "Sujeet";
