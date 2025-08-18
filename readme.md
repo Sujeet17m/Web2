@@ -1,3 +1,3 @@
 Web development course 
 
-include sheriyans
+includes sheriyans & harkirat web development course 
